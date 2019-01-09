@@ -1,14 +1,48 @@
+body{
+  font-family: sans-serif;
+  -background-color:#F6BB42; 
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); 
+  animation: backgroundChange 7s linear 2s infinite;
+  color:#08051a;
+  
+  
+}
+@keyframes backgroundChange{
+  0% {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); 
+  }
+  100% { background-position: right center; }
+}
 ul {
   list-style: none;
   padding: 0;
 }
 
 p {
-  color: #444;
+  -color: #444;
+  -color:#2e2724;
 }
-
+button{
+  padding:1rem;
+  border-radius:5px;
+  font-weight:bold;
+  outline:none;
+  border:none;
+  box-shadow:3px 3px 2px rgba(10,10,10,.1);
+  cursor: pointer;
+}
+button:hover{
+  background:#eee;
+}
 button:focus {
   outline: 0;
+}
+button:last-of-type{
+  background:#4A89DC;
+  color:#fff;
+}
+button:last-of-type:hover{
+  background:#1b89DE;
 }
 
 .container {
@@ -20,6 +54,9 @@ button:focus {
 
 .container h1 {
   margin-bottom: 20px;
+  font-size:3rem;
+  color:#fff;
+  color:#08051a;
 }
 
 .page-description {
@@ -45,8 +82,16 @@ button:focus {
 }
 
 #note-textarea {
+  min-width:640px;
+  min-height:350px;
   margin: 20px 0;
+  padding:1rem;
+  border:solid 1px rgba(255,255,255,.2);
+  border-radius:5px;
+  box-shadow:1px 2px 8px 2px rgba(5,5,5,.1);
 }
+
+/* APP FUNCTIONAL AREA */
 
 #recording-instructions {
   margin: 15px auto 60px;
